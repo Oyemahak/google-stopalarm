@@ -1,0 +1,85 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* Header styling similar to Google Maps app */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background-color: #4285F4;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  height: 32px;
+  width: 32px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  flex-grow: 1;
+  width: 100%;
+  height: 60vh;
+}
+
+/* Info panel */
+#info {
+  padding: 16px;
+  background-color: #f1f3f4;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
+}
+
+#distance {
+  font-weight: bold;
+  color: #202124;
+}
+
+/* Stop alarm button */
+#stopAlarm {
+  margin-top: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #ea4335;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#stopAlarm:hover {
+  background-color: #d93025;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  #info {
+    font-size: 14px;
+  }
+
+  #stopAlarm {
+    width: 100%;
+  }
+}

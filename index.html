@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google StopAlarm</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://maps.gstatic.com/mapfiles/api-3/images/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Google_Maps_icon_%282020%29.svg" alt="Logo"
+      class="logo" />
+    <h1>Google StopAlarm</h1>
+  </header>
+
+  <main>
+    <div id="map"></div>
+    <div id="info">
+      <p>
+        Distance to Destination: <span id="distance">N/A</span> meters
+      </p>
+      <button id="stopAlarm">Stop Alarm</button>
+    </div>
+  </main>
+
+  <audio id="alarmAudio" loop>
+    <source src="alarm.wav" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+
+</html>
